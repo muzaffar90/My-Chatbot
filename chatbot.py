@@ -2,12 +2,11 @@ import streamlit as st
 import google.generativeai as genai
 import os
 
-api_key = os.environ.get("GOOGLE_API_KEY")
+api_key = os.environ.get(GOOGLE_API_KEY)
 
 # Configure the API key
 
 genai.configure(api_key=api_key)
-print(os.environ.get("GOOGLE_API_KEY"))
 
 # Initialize the Generative Model
 # model = genai.GenerativeModel('gemini-pro')
